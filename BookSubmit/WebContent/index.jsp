@@ -29,7 +29,7 @@
 		</tr>
 		<tr style="text-align:center">
 			<td><a href="./">첫번째 제목</a></td>
-			<td><a href="./">두번째 제목</a></td>
+			<td><a href="./">두번째 제목r</a></td>
 			<td><a href="./">세번째 제목</a></td>
 		</tr>
 		<tr style="text-align:center">
