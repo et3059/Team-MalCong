@@ -11,73 +11,87 @@
 	<link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
-	<nav class="navbar navbar-light bg-light">
-		<a href="search.jsp"><img src="./image/search.svg" width="20px"></a>
-		<a class="navbar-brand" href="index.jsp">북서밋</a>
-		<a href="myHome.jsp"><img src="./image/person-circle.svg" width="30px"></a>
-	</nav>
-	<br>
-	<section class="container center">
+	<div class="headBar bg-light">
+		<span class="ml-2" style="float:left;"><a href="search.jsp"><img src="./image/search.svg" width="20px"></a></span>
+		<span style="float:center;"><a class="navbar-brand" href="index.jsp" style="text-align:center;">북서밋</a></span>
+		<span class="mr-2" style="float:right;"><a href="myHome.jsp"><img src="./image/person-circle.svg" width="30px"></a></span>
+	</div><br>
+	<section class="container center mt-5" style="max-width:400px;">
 	<table border=1 style="border-style:dashed; margin-left: auto; margin-right: auto;" width="150px" height="100px">
 	<th>
-    <table class="table" style="margin-left: auto; margin-right: auto;" width="150px" height="100px">
-		<th colspan=2>투고홈<small>new</small></th><th style="text-align:right;"><small>+자세히</small></th>
+    <table class="table" width="150px" height="100px">
+		<th colspan=2><a href="./">투고홈<small>new</small></a></th>
+		<th style="text-align:right;"><a href="./"><small>+자세히</small></a></th>
 		<tr style="text-align:center">
 			<td><img src="./image/sample.png" width="80px" height="150px"></td>
 			<td><img src="./image/sample.png" width="80px" height="150px"></td>
 			<td><img src="./image/sample.png" width="80px" height="150px"></td>
 		</tr>
 		<tr style="text-align:center">
-			<td>첫번째 제목</td><td>두번째 제목</td><td>세번째 제목</td>
+			<td><a href="./">첫번째 제목</a></td>
+			<td><a href="./">두번째 제목</a></td>
+			<td><a href="./">세번째 제목</a></td>
 		</tr>
 		<tr style="text-align:center">
-			<td>첫번째 작가</td><td>두번째 작가</td><td>세번째 작가</td>
+			<td><a href="./">첫번째 작가</a></td>
+			<td><a href="./">두번째 작가</a></td>
+			<td><a href="./">세번째 작가</a></td>
 		</tr>
     </table>
     </th>
     </table>
-    <br>
-    <table border=1 style="border-style:dashed; margin-left: auto; margin-right: auto;" width="316px" height="100px">
+    <table class="mt-4" border=1 style="border-style:dashed; margin-left: auto; margin-right: auto;" width="316px" height="100px">
 	<th>
-    <table class="table" style="margin-left: auto; margin-right: auto;" width="150px" height="100px">
-		<th colspan=2>자유홈<small>new</small></th><th style="text-align:right;"><small>+자세히</small></th>
+    <table class="table" width="150px" height="100px">
+		<th colspan=2><a href="./">자유홈<small>new</small></a></th>
+		<th style="text-align:right;"><a href="./"><small>+자세히</small></a></th>
 		<tr>
-			<td colspan=2>제목</td><td style="text-align:right;">시간</td>
+			<td colspan=2><a href="./">제목</a></td>
+			<td style="text-align:right;"><a href="./">시간</a></td>
 		</tr>
 		<tr>
-			<td colspan=2>제목</td><td style="text-align:right;">시간</td>
+			<td colspan=2><a href="./">제목</a></td>
+			<td style="text-align:right;"><a href="./">시간</a></td>
 		</tr>
 		<tr>
-			<td colspan=2>제목</td><td style="text-align:right;">시간</td>
+			<td colspan=2><a href="./">제목</a></td>
+			<td style="text-align:right;"><a href="./">시간</a></td>
 		</tr>
 		<tr>
-			<td colspan=2>제목</td><td style="text-align:right;">시간</td>
+			<td colspan=2><a href="./">제목</a></td>
+			<td style="text-align:right;"><a href="./">시간</a></td>
 		</tr>
 		<tr>
-			<td colspan=2>제목</td><td style="text-align:right;">시간</td>
+			<td colspan=2><a href="./">제목</a></td>
+			<td style="text-align:right;"><a href="./">시간</a></td>
 		</tr>
     </table>
     </th>
     </table>
-    <br>
-    <table border=1 style="border-style:dashed; margin-left: auto; margin-right: auto;" width="316px" height="100px">
+    <table class="mt-4" border=1 style="border-style:dashed; margin-left: auto; margin-right: auto;" width="316px" height="100px">
 	<th>
-    <table class="table" style="margin-left: auto; margin-right: auto;" width="150px" height="100px">
-		<th colspan=2>팁홈<small>new</small></th><th style="text-align:right;"><small>+자세히</small></th>
+    <table class="table" width="150px" height="100px">
+		<th colspan=2><a href="./">팁홈<small>new</small></a></th>
+		<th style="text-align:right;"><a href="./"><small>+자세히</small></a></th>
 		<tr>
-			<td colspan=2>제목</td><td style="text-align:right;">시간</td>
+			<td colspan=2><a href="./">제목</a></td>
+			<td style="text-align:right;"><a href="./">시간</a></td>
 		</tr>
 		<tr>
-			<td colspan=2>제목</td><td style="text-align:right;">시간</td>
+			<td colspan=2><a href="./">제목</a></td>
+			<td style="text-align:right;"><a href="./">시간</a></td>
 		</tr>
 		<tr>
-			<td colspan=2>제목</td><td style="text-align:right;">시간</td>
+			<td colspan=2><a href="./">제목</a></td>
+			<td style="text-align:right;"><a href="./">시간</a></td>
 		</tr>
 		<tr>
-			<td colspan=2>제목</td><td style="text-align:right;">시간</td>
+			<td colspan=2><a href="./">제목</a></td>
+			<td style="text-align:right;"><a href="./">시간</a></td>
 		</tr>
 		<tr>
-			<td colspan=2>제목</td><td style="text-align:right;">시간</td>
+			<td colspan=2><a href="./">제목</a></td>
+			<td style="text-align:right;"><a href="./">시간</a></td>
 		</tr>
     </table>
     </th>
@@ -85,10 +99,10 @@
 	</section>
 	
 	<br><br><br>
-	<footer class="bg-light mt-2 p-2 text-center" style="color:#111111; position: fixed; bottom: 0; width: 100%; margin-bottom: 0px;">
-		<a class="navbar-brand" href="index.jsp">투고&nbsp&nbsp&nbsp</a>
-		<a class="navbar-brand" href="index.jsp">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp자유&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-		<a class="navbar-brand" href="index.jsp">&nbsp&nbsp&nbsp팁</a>
+	<footer class="underBar bg-light mt-2 p-2 text-center">
+		<div style="float: left; width: 33%;"><a class="navbar-brand" href="index.jsp">투고</a></div>
+		<div style="float: left; width: 33%;"><a class="navbar-brand" href="index.jsp">자유</a></div>
+		<div style="float: left; width: 33%;"><a class="navbar-brand" href="index.jsp">팁</a></div>
 	</footer>
 	<!-- jquery 자바스크립트 -->
 	<script src="./js/jquery.min.js"></script>
