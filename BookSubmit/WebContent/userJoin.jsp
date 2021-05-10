@@ -18,11 +18,19 @@
 		<form method="post" action="./userJoinAction.jsp">
 			<div class="form-group">
 				<label>아이디</label>
-				<input type="text" name="userID" class="form-control">
+				<input type="text" name="userID" class="form-control" maxlength="20">
 			</div>
 			<div class="form-group">
 				<label>비밀번호</label>
-				<input type="password" name="userPassword" class="form-control">
+				<input type="password" name="userPassword" class="form-control" maxlength="20">
+			</div>
+			<div class="form-group">
+				<label>닉네임</label>
+				<input type="text" name="userNick" class="form-control" maxlength="20">
+			</div>
+			<div class="form-group">
+				<label>이메일</label>
+				<input type="email" name="userEmail" class="form-control" maxlength="20">
 			</div>
 			<button type="submit" class="btn btn-primary">회원가입</button>
 		</form>

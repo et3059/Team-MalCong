@@ -20,8 +20,8 @@
 	<table border=1 style="border-style:dashed; margin-left: auto; margin-right: auto;" width="150px" height="100px">
 	<th>
     <table class="table" width="150px" height="100px">
-		<th colspan=2><a href="./">투고홈<small>new</small></a></th>
-		<th style="text-align:right;"><a href="./"><small>+자세히</small></a></th>
+		<th colspan=2><a href="./submitHome.jsp">투고홈<small>new</small></a></th>
+		<th style="text-align:right;"><a href="./submitHome.jsp"><small>+자세히</small></a></th>
 		<tr style="text-align:center">
 			<td><img src="./image/sample.png" width="80px" height="150px"></td>
 			<td><img src="./image/sample.png" width="80px" height="150px"></td>
@@ -29,7 +29,7 @@
 		</tr>
 		<tr style="text-align:center">
 			<td><a href="./">첫번째 제목</a></td>
-			<td><a href="./">두번째 제목r</a></td>
+			<td><a href="./">두번째 제목</a></td>
 			<td><a href="./">세번째 제목</a></td>
 		</tr>
 		<tr style="text-align:center">
@@ -43,8 +43,8 @@
     <table class="mt-4" border=1 style="border-style:dashed; margin-left: auto; margin-right: auto;" width="316px" height="100px">
 	<th>
     <table class="table" width="150px" height="100px">
-		<th colspan=2><a href="./">자유홈<small>new</small></a></th>
-		<th style="text-align:right;"><a href="./"><small>+자세히</small></a></th>
+		<th colspan=2><a href="./freeHome.jsp">자유홈<small>new</small></a></th>
+		<th style="text-align:right;"><a href="./freeHome.jsp"><small>+자세히</small></a></th>
 		<tr>
 			<td colspan=2><a href="./">제목</a></td>
 			<td style="text-align:right;"><a href="./">시간</a></td>
@@ -71,8 +71,8 @@
     <table class="mt-4" border=1 style="border-style:dashed; margin-left: auto; margin-right: auto;" width="316px" height="100px">
 	<th>
     <table class="table" width="150px" height="100px">
-		<th colspan=2><a href="./">팁홈<small>new</small></a></th>
-		<th style="text-align:right;"><a href="./"><small>+자세히</small></a></th>
+		<th colspan=2><a href="./tipHome.jsp">팁홈<small>new</small></a></th>
+		<th style="text-align:right;"><a href="./tipHome.jsp"><small>+자세히</small></a></th>
 		<tr>
 			<td colspan=2><a href="./">제목</a></td>
 			<td style="text-align:right;"><a href="./">시간</a></td>
@@ -100,9 +100,9 @@
 	
 	<br><br><br>
 	<footer class="underBar bg-light mt-2 p-2 text-center">
-		<div style="float: left; width: 33%;"><a class="navbar-brand" href="index.jsp">투고</a></div>
-		<div style="float: left; width: 33%;"><a class="navbar-brand" href="index.jsp">자유</a></div>
-		<div style="float: left; width: 33%;"><a class="navbar-brand" href="index.jsp">팁</a></div>
+		<div style="float: left; width: 33%;"><a class="navbar-brand" href="submitHome.jsp">투고</a></div>
+		<div style="float: left; width: 33%;"><a class="navbar-brand" href="freeHome.jsp">자유</a></div>
+		<div style="float: left; width: 33%;"><a class="navbar-brand" href="tipHome.jsp">팁</a></div>
 	</footer>
 	<!-- jquery 자바스크립트 -->
 	<script src="./js/jquery.min.js"></script>
