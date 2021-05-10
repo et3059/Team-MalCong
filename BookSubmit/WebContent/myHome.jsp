@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter" %>
+<%@ page import="user.UserDAO" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +13,35 @@
 	<link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
+<%
+	String userID = null;
+	String userNick = null;
+	String userEmail = null;
+	if(session.getAttribute("userID") != null){ //유저가 로그인했을 경우
+		userID = (String) session.getAttribute("userID");
+		userNick = (String) session.getAttribute("userNick");
+		userEmail = (String) session.getAttribute("userEmail");
+	}
+	
+	if(userID == null) {
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("alert('로그인을 해주세요.');");
+		script.println("location.href = 'userLogin.jsp'");
+		script.println("</script>");
+		script.close();
+		return;
+	}
+	boolean emailChecked = new UserDAO().getUserEmailChecked(userID);
+	if(emailChecked == false) { // 이메일 인증이 안된 경우
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("location.href = 'emailSendConfirm.jsp'");
+		script.println("</script>");
+		script.close();
+		return;
+	}
+%>
 	<div class="headBar bg-light">
 		<span class="ml-2" style="float:left;"><a href="search.jsp"><img src="./image/search.svg" width="20px"></a></span>
 		<span class="ml-2" style="float:left;"><a href="javascript:history.back()"><img src="./image/arrow-left.svg" width="20px"></a></span>
@@ -23,11 +54,11 @@
     <table class="table">
 		<tr>
 			<td>닉네임</td>
-			<td>a</td>
+			<td><%=userNick%></td>
 		</tr>
 		<tr>
 			<td>이메일</td>
-			<td>asd@adf.com</td>
+			<td><%=userEmail%></td>
 		</tr>
 		<tr>
 			<td>팔로워 수</td>
@@ -51,7 +82,7 @@
 			<td>공지사항</td>
 		</tr>
 		<tr>
-			<td>로그아웃</td>
+			<td><a href="userLogout.jsp">로그아웃</a></td>
 		</tr>
 		<tr>
 			<td>회원탈퇴</td>

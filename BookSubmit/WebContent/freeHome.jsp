@@ -30,7 +30,7 @@
 		</span>
 	</div>
 	<section class="container center mt-5" style="max-width:400px;">
-	<div class="container" style="font-size:small;">
+	<div class="container" style="font-size:x-small;">
 		<table class="table table-striped" style="text-align:center; border:1px solid #dddddd">
 			<thead>
 				<tr>
@@ -38,6 +38,7 @@
 					<th style="background-color:#cccccc; text-align:center;">제목</th>
 					<th style="background-color:#cccccc; text-align:center;">작성자</th>
 					<th style="background-color:#cccccc; text-align:center;">작성일</th>
+					<th style="background-color:#cccccc; text-align:center;">추천</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -45,6 +46,7 @@
 				<td>ㅁㄴㅇㄹ</td>
 				<td>홍길동</td>
 				<td>2021-05-05</td>
+				<td>3</td>
 			</tbody>
 		</table>
 	</div>

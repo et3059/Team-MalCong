@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +12,21 @@
 	<link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
+<%
+	String userID = null;
+	if(session.getAttribute("userID") != null){ //유저가 로그인했을 경우
+		userID = (String) session.getAttribute("userID");
+	}
+	if(userID != null) {
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("alert('로그인이 된 상태입니다.');");
+		script.println("location.href = 'index.jsp'");
+		script.println("</script>");
+		script.close();
+		return;
+	}
+%>
 	<div class="headBar bg-light">
 		<span style="float:center;">북서밋 로그인</span>
 	</div><br>
