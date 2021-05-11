@@ -43,7 +43,7 @@
 			<tbody>
 				<td>1</td>
 				<td>ㅁㄴㅇㄹ</td>
-				<td>홍길동</td>
+				<td>박준형</td>
 				<td>2021-05-05</td>
 			</tbody>
 		</table>
