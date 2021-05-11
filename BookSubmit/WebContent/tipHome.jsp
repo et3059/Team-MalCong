@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.io.PrintWriter" %>
+<%@ page import="user.UserDAO" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +13,33 @@
 	<link rel="stylesheet" href="./css/custom.css">
 </head>
 <body>
+<%
+	String userID = null;
+	String userNick = null;
+	String userEmail = null;
+	if(session.getAttribute("userID") != null){ //유저가 로그인했을 경우
+		userID = (String) session.getAttribute("userID");
+		userNick = (String) session.getAttribute("userNick");
+		userEmail = (String) session.getAttribute("userEmail");
+	}
+	if(userID == null) {
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("location.href = 'userLogin.jsp'");
+		script.println("</script>");
+		script.close();
+		return;
+	}
+	boolean emailChecked = new UserDAO().getUserEmailChecked(userID);
+	if(emailChecked == false) { // 이메일 인증이 안된 경우
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("location.href = 'emailSendConfirm.jsp'");
+		script.println("</script>");
+		script.close();
+		return;
+	}
+%>
 	<div class="headBar bg-light">
 		<span class="ml-2" style="float:left;"><a href="search.jsp"><img src="./image/search.svg" width="20px"></a></span>
 		<span class="ml-2" style="float:left;"><a href="javascript:history.back()"><img src="./image/arrow-left.svg" width="20px"></a></span>
@@ -20,7 +49,7 @@
 	<div>
 		<span class="ml-2 mt-2" style="float:left;"><h3>팁홈</h3></span>
 		<span class="mr-2 mt-2" style="float:right;"><a href="tipWrite.jsp"><img src="./image/pencil.svg" width="30px"></a></span>
-		<span class="mr-2" style="float:right">		
+		<span class="mr-2" style="float:right">
 		<form method="get" action="./index.jsp" class="form-inline">
 			<select name="searchType" class="form-control mx-1 mt-2">
 				<option value="최신순">최신순</option>
