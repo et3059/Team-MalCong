@@ -42,14 +42,9 @@
 			</thead>
 			<tbody>
 				<td>1</td>
-<<<<<<< HEAD
-				<td>aac98124</td>
-				<td>테테스스트트</td>
-=======
-				<td>ㅁㄴㅇㄹ</td>
-				<td>테테</td>
->>>>>>> branch 'main' of https://github.com/et3059/Team-MalCong.git
-				<td>2021-05-05</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
 			</tbody>
 		</table>
 	</div>
