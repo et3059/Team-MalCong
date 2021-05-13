@@ -9,7 +9,7 @@ public class DatabaseUtil {
 		try {
 			String dbURL = "jdbc:mysql://localhost:3306/booksubmit?serverTimezone=UTC";
 			String dbID = "root";
-			String dbPassword = "root";
+			String dbPassword = "1111";
 			Class.forName("com.mysql.jdbc.Driver");
 			return DriverManager.getConnection(dbURL, dbID, dbPassword);
 			
