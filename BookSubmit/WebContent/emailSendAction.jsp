@@ -12,6 +12,7 @@
 <%@ page import="util.Gmail"%>
 <%@ page import="java.io.PrintWriter"%> <!-- 특정한 스크립트 구문을 출려하고자 할 때 사용 -->
 <%
+	System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2");
 	UserDAO userDAO = new UserDAO();
 	String userID = null;
 	if(session.getAttribute("userID") != null) { // 사용자가 로그인 상태일 때(세션값이 유효한 상태)
@@ -47,11 +48,12 @@
 		
 	Properties p = new Properties();
 	p.put("mail.smtp.user", from);
-	p.put("mail.smtp.host", "smtp.googlemail.com");
+	p.put("mail.smtp.host", "smtp.gmail.com");
 	p.put("mail.smtp.port", "465");
-	//p.put("mail.smtp.starttls.enable", "true");
+	p.put("mail.smtp.starttls.enable", "true");
 	p.put("mail.smtp.auth", "true");
 	p.put("mail.smtp.debug", "true");
+	p.put("mail.smtp.ssl.enable","true");
 	p.put("mail.smtp.socketFactory.port", "465");
 	p.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 	p.put("mail.smtp.socketFactory.fallback", "false");
