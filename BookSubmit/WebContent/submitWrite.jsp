@@ -18,9 +18,8 @@
 		<span class="mr-2" style="float:right;"><a href="myHome.jsp"><img src="./image/person-circle.svg" width="30px"></a></span>
 	</div><br>
 	<section class="container center mt-5" style="max-width:400px;">
-
+	
 	</section>
-
 	<br><br><br>
 	<footer class="underBar bg-light mt-2 p-2 text-center">
 		<div style="float: left; width: 33%;"><a class="navbar-brand" href="submitHome.jsp">투고</a></div>

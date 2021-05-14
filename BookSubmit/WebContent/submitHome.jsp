@@ -41,7 +41,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<td>1</td>
+				<td>가나다</td>
 				<td>222</td>
 				<td>3344</td>
 				<td>4</td>
