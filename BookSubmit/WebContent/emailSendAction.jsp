@@ -59,6 +59,7 @@
 	p.put("mail.smtp.socketFactory.fallback", "false");
 	
 	try {
+		System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2");
 		Authenticator auth = new Gmail();
 		Session ses = Session.getInstance(p, auth);
 		ses.setDebug(true);
