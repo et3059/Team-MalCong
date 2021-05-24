@@ -54,6 +54,15 @@
 		<span style="float:right;"> 수정 | 삭제 </span>
 	</div>
 	<br><br><br>
+	<span><img src="./image/chat-left-dots.svg" width="20px"> _Comments</span>
+	<div>
+		<div class="comment-txt">
+			<textarea id="cmt" name="cmt" cols="40" raws="2" placeholder="댓글을 입력해주세요."></textarea>
+		</div>
+		<div class="comment-button">
+			<button id="cmt-btn" class="btn btn-light">작성하기</button>
+		</div>
+	</div>
 	<div align=center>
 		<button type="button" class="btn btn-light"><img src="./image/caret-left.svg" width="20px">이전글</button>
 		<button type="button" class="btn btn-light">댓글창 <img src="./image/chat-left-dots.svg" width="20px"></button>

@@ -42,6 +42,15 @@
 	
 	</section>
 	<br><br><br>
+	<span><img src="./image/chat-left-dots.svg" width="20px"> _Comments</span>
+	<div>
+		<div class="comment-txt">
+			<textarea id="cmt" name="cmt" cols="40" raws="2" placeholder="댓글을 입력해주세요."></textarea>
+		</div>
+		<div class="comment-button">
+			<button id="cmt-btn" class="btn btn-light">작성하기</button>
+		</div>
+	</div>
 	<footer class="underBar bg-light mt-2 p-2 text-center">
 		<div style="float: left; width: 33%;"><a class="navbar-brand" href="submitHome.jsp">투고</a></div>
 		<div style="float: left; width: 33%;"><a class="navbar-brand" href="freeHome.jsp">자유</a></div>
